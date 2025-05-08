@@ -1,12 +1,12 @@
-package pl.ewebpartner.shopdemo;
+package pl.ewebpartner.shopdemo.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "discount")
-public class DiscountProperties {
+@ConfigurationProperties(prefix = "vat")
+public class VatProperties {
     private final int valueA;
 
-    public DiscountProperties(int valueA) {
+    public VatProperties(int valueA) {
         this.valueA = valueA;
     }
 

@@ -1,10 +1,10 @@
-package pl.ewebpartner.shopdemo;
+package pl.ewebpartner.shopdemo.model;
 
 import java.math.BigDecimal;
 
 public class Product {
-    String productName;
-    BigDecimal productPrice;
+    private String productName;
+    private BigDecimal productPrice;
 
     public Product(String productName, BigDecimal productPrice) {
         this.productName = productName;
@@ -18,7 +18,9 @@ public class Product {
     public BigDecimal getProductPrice() {
         return productPrice;
     }
-    @Override public String toString() {
+
+    @Override
+    public String toString() {
         return productName + " - " + productPrice + " zł";
     }
 }

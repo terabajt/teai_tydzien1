@@ -1,22 +1,16 @@
-package pl.ewebpartner.shopdemo;
+package pl.ewebpartner.shopdemo.service;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Service;
+import pl.ewebpartner.shopdemo.model.Product;
+import pl.ewebpartner.shopdemo.model.ProductList;
 
-import java.lang.reflect.Array;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 @Service
 public class ProductListService {
-    private final ProductList productList;
-
-    public ProductListService(ProductList productList) {
-        this.productList = productList;
-    }
-
+    private final ProductList productList = new ProductList();
 
     public void initProducts() {
         Random random = new Random();
